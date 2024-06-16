@@ -1,0 +1,57 @@
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(20deg);
+  }
+
+  20% {
+    transform: rotate(-20deg);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  40% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

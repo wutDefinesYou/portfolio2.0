@@ -1,0 +1,5 @@
+.theme-switch {
+  position: fixed;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+}

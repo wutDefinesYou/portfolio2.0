@@ -1,0 +1,19 @@
+@import url('styles/theme-switch.css');
+@import url('styles/landing-page.css');
+@import url('styles/animations.css');
+@import url('styles/project-display.css');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-block-size: 100vb;
+}

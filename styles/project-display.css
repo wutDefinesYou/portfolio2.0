@@ -1,0 +1,73 @@
+section:last-of-type {
+  block-size: 100vb;
+  inline-size: 80%;
+  margin-inline: auto;
+  margin-bottom: 0;
+  padding-block-start: 3.5rem;
+  display: flex;
+}
+
+section:last-of-type a {
+  block-size: fit-content;
+}
+
+section:last-of-type .card {
+  inline-size: 100%;
+  block-size: 10vb;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+section:last-of-type .card a:link,
+section:last-of-type .card a:visited,
+section:last-of-type .card a:hover,
+section:last-of-type .card a:active {
+  --pico-text-decoration: none;
+}
+
+section:last-of-type .card:hover::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section:last-of-type .card p {
+  opacity: 0;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline: 0;
+  transform: translateY(-50%);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: ivory;
+  transition: opacity 0.3s ease-in-out;
+}
+
+section:last-of-type .card p {
+  text-align: center;
+}
+
+section:last-of-type .card:hover p {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  section:last-of-type .card::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  section:last-of-type .card p {
+    opacity: 1;
+    transition: none;
+  }
+}
