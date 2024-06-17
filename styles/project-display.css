@@ -5,15 +5,19 @@ section:last-of-type {
   margin-bottom: 0;
   padding-block-start: 3.5rem;
   display: flex;
+  flex-wrap: wrap;
 }
 
 section:last-of-type a {
   block-size: fit-content;
+  flex: 100%;
+
+  @media (width >= 768px) {
+    flex: 0 0 min(512px, 100% / 4 - 0.1%);
+  }
 }
 
 section:last-of-type .card {
-  inline-size: 100%;
-  block-size: 10vb;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
